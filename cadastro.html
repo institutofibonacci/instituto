@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Instituto Fibonacci</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to bottom, #dba6f1, #f8e8fd);
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    .waves {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 0;
+    }
+
+    .container {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      padding: 3rem 2rem;
+      margin-top: 140px;
+      max-width: 400px;
+      width: 90%;
+    }
+
+    .logo {
+      width: 100px;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      color: #a241cc;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      color: #7a3aa3;
+      margin-bottom: 1.5rem;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      font-size: 32px;
+      margin-bottom: 1rem;
+    }
+
+    .social-icons a {
+      color: #a241cc;
+      transition: transform 0.2s ease, color 0.2s ease;
+    }
+
+    .social-icons a:hover {
+      transform: scale(1.2);
+      color: #7a3aa3;
+    }
+
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .btn {
+      position: relative;
+      background-color: #a241cc;
+      color: white;
+      padding: 1rem 3rem; /* espaço extra pros ícones */
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      text-align: center;
+    }
+
+    .btn:hover {
+      background-color: #8b2cb4;
+      transform: scale(1.03);
+    }
+
+    .btn i {
+      position: absolute;
+      right: 1.2rem;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 18px;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <svg class="waves" viewBox="0 0 1440 320" preserveAspectRatio="none">
+    <path fill="#a241cc" fill-opacity="0.1" d="M0,160 C360,80 1080,240 1440,160 L1440,0 L0,0 Z"></path>
+    <path fill="#a241cc" fill-opacity="0.2" d="M0,120 C480,200 960,80 1440,120 L1440,0 L0,0 Z"></path>
+    <path fill="#a241cc" fill-opacity="0.4" d="M0,80 C600,160 840,0 1440,80 L1440,0 L0,0 Z"></path>
+  </svg>
+
+  <div class="container"> 
+    <img style="border-radius: 100%; height: 200px; width: 200px;"
+     src="../Site IMF/Imagens IMF/ddeda81d-7d0a-4bdf-af6e-11998554d693.jpg" alt="Logo Instituto Fibonacci" class="logo" />
+    <h1>Instituto Fibonacci</h1>
+    <p>Bem-vindos ao Instituto de Matemática Fibonacci!</p>
+
+    <div class="social-icons">
+      <a href="https://www.instagram.com/institutofibonacci_" target="_blank" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="#" target="_blank" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </div>
+
+    <div class="buttons">
+      <a href="www.institutofibonacci.org" class="btn">
+        Site Oficial do Instituto
+        <i class="fas fa-ellipsis-v"></i>
+      </a>
+      <a href="www.institutofibonacci.org" class="btn">
+        Inscrição na OMF
+        <i class="fas fa-ellipsis-v"></i>
+      </a>
+      <a href="https://www.instagram.com/institutofibonacci_" class="btn">
+        Instagram
+        <i class="fas fa-ellipsis-v"></i>
+      </a>
+      <a href="#" class="btn">
+        Outros Projetos
+        <i class="fas fa-ellipsis-v"></i>
+      </a>
+    </div>
+  </div>
+</body>
+</html>
